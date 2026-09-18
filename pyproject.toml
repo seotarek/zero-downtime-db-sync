@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zero-downtime-db-sync"
+version = "0.1.0"
+description = "A resilient zero-downtime streaming database migration and replication CLI"
+authors = [{ name = "Tarek Mohamed", email = "contact@tarek-mohamed.me.eg" }]
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["database-migration", "replication", "mysql", "postgresql", "sqlite", "resilient-sync"]
+
+[project.scripts]
+db-sync = "dbsync.cli:main"
